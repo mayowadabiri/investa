@@ -1,0 +1,51 @@
+.paragraph {
+  font-size: 1.14rem;
+  font-weight: 800;
+  font-family: "Lato", sans-serif;
+}
+
+.line {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.14rem;
+  line-height: 2.14rem;
+
+  &-dark {
+    color: $color-dark-1;
+  }
+
+  &-white{
+    color: $color-white
+  }
+}
+
+.h2 {
+  font-size: 3.87rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+
+  &-dark {
+    color: $color-dark-1;
+  }
+
+  &-white {
+    color: $color-white;
+  }
+
+  &-small {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: $color-dark-1;
+
+    @include respond(phone){
+      font-size: 2rem;
+    }
+  }
+
+  @include respond(phone){
+    font-size: 2rem;
+  }
+}

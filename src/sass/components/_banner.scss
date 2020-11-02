@@ -1,0 +1,47 @@
+.banner {
+  width: 80%;
+  margin: auto;
+  color: $color-white;
+  text-align: center;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+
+  &__text-sm {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__text-bg {
+    font-size: 3rem;
+    font-weight: 800;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+  }
+
+  &__text-xm {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  &__store-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__store-link {
+    width: 12.42rem;
+
+    &:not(:last-child) {
+      margin-right: 1.2rem;
+    }
+  }
+  &__store {
+    width: 100%;
+  }
+}

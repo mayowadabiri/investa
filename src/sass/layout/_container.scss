@@ -1,0 +1,16 @@
+.container {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  margin: auto;
+  padding: 6rem;
+  width: 100%;
+
+  @include respond(tab-port){
+    padding: 4rem;
+  }
+  @include respond(phone){
+    padding: 3rem;
+  }
+
+}

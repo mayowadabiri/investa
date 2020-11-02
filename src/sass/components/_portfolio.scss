@@ -1,0 +1,110 @@
+.portfolio {
+  width: 100%;
+  font-family: "Lato", sans-serif;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__img-box {
+    flex: 0 1 70%;
+    max-width: 70%;
+    margin-right: 3rem;
+
+    @include respond(phone) {
+      flex: 1 0 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+  }
+
+  &__img {
+    object-fit: contain;
+    height: 8.2rem;
+    width: 100%;
+    @include respond(phone) {
+      flex: 1 1 30%;
+      width: 30%;
+    }
+
+    &-1 {
+      object-position: left;
+
+      @include respond(phone) {
+        flex-basis: 50%;
+        object-position: none;
+      }
+    }
+    &-2 {
+      object-position: 80%;
+      margin-top: -10px;
+      margin-bottom: 20px;
+      @include respond(phone) {
+        flex-basis: 50%;
+        object-position: none;
+        margin: 0;
+      }
+    }
+
+    &-3 {
+      object-position: 25%;
+      @include respond(phone) {
+        flex-basis: 100%;
+        justify-content: stretch;
+        object-position: none;
+      }
+    }
+  }
+
+  &__content-box {
+    flex: 0 1 70%;
+    max-width: 70%;
+
+    @include respond(phone) {
+      flex: 0 1 100%;
+      max-width: 100%;
+      margin-top: 3rem;
+    }
+  }
+
+  &__content {
+    width: 80%;
+    @include respond(phone) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: $color-dark-1;
+  }
+
+  &__text {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 184.6%;
+    color: $color-dark-1;
+
+    @include respond(phone) {
+      color: #cecece;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+  }
+}

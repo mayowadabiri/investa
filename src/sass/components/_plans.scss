@@ -1,0 +1,163 @@
+.plans {
+  width: 100%;
+  display: flex;
+
+  // &__container {
+  // }
+
+  &__container-box {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  // &__img-box {
+  //   // margin-right: auto;
+  //   // flex: 1;
+  //   // margin-left: 6rem;
+  //   // margin-right: 15rem;
+  //   width: 718px;
+  //   height: 456.32px;
+  //   // align-self: stretch;
+  // }
+
+  &__img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    flex: 0 1 50%;
+    max-width: 50%;
+    align-self: center;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 3rem;
+    align-self: flex-end;
+    flex: 1 0 50%;
+
+    @include respond(phone) {
+      flex: 1 0 100%;
+      text-align: center;
+      // flex-direction: row ;
+    }
+  }
+
+  &__title {
+    font-size: 3.87rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: $color-dark-1;
+  }
+
+  &__text {
+    text-align: left;
+    display: flex;
+    @include respond(phone) {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      color: #cecece;
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__layout {
+    display: flex;
+    margin-top: 5rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      margin-top: 3rem;
+    }
+  }
+
+  &__timeline-box {
+    position: relative;
+  }
+
+  &__timeline {
+    height: 10.2rem;
+    width: 6px;
+    background: rgba(62, 70, 167, 0.2);
+    position: relative;
+    border-radius: 10px;
+
+    @include respond(phone) {
+      width: 80%;
+      height: 6px;
+      margin: auto;
+      align-self: stretch;
+    }
+
+    &::before {
+      content: "";
+      background-color: #3e46a7;
+      height: 33.33%;
+      width: 100%;
+      position: absolute;
+      z-index: 4;
+      -webkit-transition: 0.2s linear;
+      transition: 0.2s linear;
+
+      @include respond(phone) {
+        width: 33.33%;
+        height: 100%;
+      }
+    }
+
+    &-0 {
+      &:before {
+        top: 0;
+        @include respond(phone) {
+          left: 0;
+        }
+      }
+    }
+
+    &-1 {
+      &:before {
+        top: 33.33%;
+        @include respond(phone) {
+          left: 33.33%;
+        }
+      }
+    }
+
+    &-2 {
+      &::before {
+        top: 66.66%;
+        @include respond(phone) {
+          left: 66.66%;
+        }
+      }
+    }
+
+    &-types {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-left: 2rem;
+
+      @include respond(phone) {
+        flex-direction: row;
+        margin: 1.5rem;
+      }
+    }
+  }
+}
