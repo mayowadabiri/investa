@@ -2,7 +2,7 @@
 // import carousel_3 from "../assets/carousel_3.jpg";
 // import Carousel from "../components/carousel";
 
-import Carousel from "../components/carousel"
+import Carousel from "../components/carousel";
 
 // const users = [
 //   {
@@ -35,11 +35,8 @@ const Testimonial = () => {
   return (
     <section className="testimonial">
       <div className="container">
-        <div className="testimonial__box">
-          <div className="testimonial__title-box">
-            <h2 className=" h2-small ">What are our users saying</h2>
-          </div>
-          {/* <Carousel /> */}
+        <div className="testimonial__title-box">
+          <h2 className=" h2-small ">What are our users saying</h2>
         </div>
       </div>
     </section>

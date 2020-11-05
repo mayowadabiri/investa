@@ -1,21 +1,14 @@
-import Banner from "../components/banner";
-import Header from "../layout/header";
+import landing_img from "../assets/landing_img.png";
 
 const LandingPage = () => {
   return (
-    <div className="landing">
-      <div className="landing__container">
-        <Header />
-        <Banner />
-        <div className="landing__overlay-container">
-          <div className="landing__overlay-box"></div>
-          <div className="landing__div">
-
-          <div className="landing__img-box"></div>
-          </div>
-        </div>
+    <section className="landing">
+      <div className="landing__overlay-box"></div>
+      <div className="landing__img-box">
+        <img src={landing_img} alt="dashboard" className="landing__img" />
       </div>
-    </div>
+      {/* <div className="background-overlay"></div> */}
+    </section>
   );
 };
 

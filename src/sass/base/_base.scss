@@ -12,8 +12,8 @@ html{
     font-size: 87.5%; // 14 rem
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
-    overflow: scroll;
-    overflow-x: hidden;
+    // overflow: scroll;
+    // overflow-x: hidden;
 
     
   @include respond(tab-land) {

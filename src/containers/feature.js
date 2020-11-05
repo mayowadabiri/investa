@@ -2,8 +2,8 @@ import feature_img from "../assets/feature.png";
 const Feature = () => {
   return (
     <section className="feature">
-      <div className="feature__container container">
-        <div className="feature__div">
+      <div className="container">
+        <div className="feature__container">
           <div className="feature__content">
             <h2 className="h2 h2-white feature__title">Is your Money Safe</h2>
             <p className="line feature__text">

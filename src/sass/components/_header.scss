@@ -1,13 +1,15 @@
 .header {
   width: 100%;
+  background-color: $color-primary;
+  z-index: 10000;
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    @include respond(tab-port) {
-      padding: 3rem 6rem 0 6rem !important;
-    }
+    // @include respond(tab-port) {
+    //   padding: 3rem 4rem 0 4rem !important;
+    // }
   }
 
   &__img-box {

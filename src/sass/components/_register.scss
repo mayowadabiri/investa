@@ -1,6 +1,6 @@
 .register {
   &__container {
-    margin-top: -5rem;
+    // margin-top: -5rem;
 
     @include respond(phone) {
       margin-top: 2rem;
@@ -37,11 +37,8 @@
     font-size: 1.14rem;
     -webkit-box-flex: 0;
     -ms-flex-positive: 0;
-    flex-grow: 0;
     align-self: center;
     display: flex;
-    flex-basis: 33.333%;
-    max-width: 33.333%;
     border-radius: 4.59292px;
 
     @include respond(phone) {
